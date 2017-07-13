@@ -1,0 +1,29 @@
+<!--detail.wxml-->
+<view class="container">
+<view class="tr">
+  <text>卡号</text>
+  <input type="number"
+  maxlength="4"
+  placeholder='请输入卡号后四位'
+  bindinput="bindKeyInputCard"/>
+</view>
+<view class="tr">
+  <text>卡类型</text>
+  <input type="text" placeholder='请输入银行名称'
+  bindinput="bindKeyInputName"/>
+</view>
+<view class="tr">
+  <text>账单日</text>
+  <input type="number" maxlength="2"
+  placeholder='账单日'
+  bindinput="bindKeyInputStart"/>
+</view>
+
+<view class="tr">
+  <text>还款日</text>
+  <input type="number" maxlength="2"
+  bindinput="bindKeyInputEnd"
+  placeholder='还款日'/>
+</view>
+<button bindtap="finish" type="primary" size="default">完成</button>
+</view>

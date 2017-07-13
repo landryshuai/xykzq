@@ -1,0 +1,22 @@
+<!--list.wxml-->
+<view class="container">
+  <view class="table">
+    <view class="tr">
+      <view class="th">信用卡</view>
+      <view class="th">账单日</view>
+      <view class="th">还款日</view>
+      <view class="th">免息期</view>
+      <view class="th">还款期</view>
+    </view>
+    <block wx:for="{{listData}}">
+      <view class="tr">
+        <view class="td">{{item.code}}</view>
+        <view class="td">{{item.text}}</view>
+        <view class="td">{{item.type}}</view>
+        <view class="td">{{item.type}}</view>
+        <view class="td">{{item.type}}</view>
+      </view>
+    </block>
+  </view>
+  <button bindtap="addcard" type="primary" size="default">添加</button>
+</view>
